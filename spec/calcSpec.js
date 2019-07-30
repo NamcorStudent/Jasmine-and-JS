@@ -1,15 +1,14 @@
 describe("Calculator", function(){
     
-   beforeEach(function() {
-      var  calc = new Calculator;
+    beforeEach(function(){
+     calc = new Calculator;   
     });
     
     
     describe("Addition test", function() {
-        
+        calc.add(20);
+        calc.add(22);
         it("should return 42", function(){
-            calc.add(20);
-            calc.add(22);
             expect(calc.value).toBe(42);
         });
         it("should return 26", function() {
